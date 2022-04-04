@@ -1,1 +1,11 @@
 clustering
+FIGINI
+nearest
+neighbors
+SVM
+feature
+space
+vector
+EAM
+MEA
+MAE

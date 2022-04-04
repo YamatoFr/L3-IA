@@ -1,0 +1,9 @@
+{"rule":"WHITESPACE_RULE","sentence":"^$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\Qlinks lks Liste des liens [2]links\\E$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\Q[1][0.3]N-#1emB\\E$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\Q11000 11000 10000 Rapport de TP Évaluation des performances d'algorithmes de classification et de réseaux de neurones Théo FIGINI L3 Informatique Année universitaire 2021-22 Syoan ODOUHA L3 Informatique Année universitaire 2021-22 Dimanche 3 Mars 2022 Rapport de TP Page /\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q – .9 0.35 0.8\\E$"}
+{"rule":"DATE_JOUR","sentence":"^\\Q11000 11000 10000 Rapport de TP Évaluation des performances d'algorithmes de classification et de réseaux de neurones Théo FIGINI L3 Informatique Année universitaire 2021-22 Syoan ODOUHA L3 Informatique Année universitaire 2021-22 Dimanche 3 Mars 2022 Rapport de TP Page /\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q – .9 0.35 0.8\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qlinks lks Liste des liens [2]links\\E$"}
+{"rule":"D_N","sentence":"^\\QPour y parvenir, les support vector machines font appel à des noyaux, c'est-à-dire des fonctions mathématiques permettant de projeter et séparer les données dans l'espace vectoriel, les \"vecteurs de support\" étant les données les plus proches de la frontière.\\E$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q) avec une perte de 1.0 en apprentissage et 1.1 en validation (Fig.\\E$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q).\\E$"}
