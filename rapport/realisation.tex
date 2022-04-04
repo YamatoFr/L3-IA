@@ -1,3 +1,59 @@
-\chapter{Réalisation}
+\chapter{Travail réalisé}
+\label{chap:realisation}
 
-\section{}
+Nous commencerons par utiliser la base de données des vins blancs car celles-ci contient le plus grand nombre d'exemples.
+Puis nous allons utiliser la base de données des vins rouges qui contient moins d'exemples, afin de vérifier l'impact
+du nombre d'exemples sur les performances.
+
+Chaque base de données est séparée en deux parties~: la partie d'entrainement et la partie de test. Les données ont également
+été normalisées.
+
+\section{Classification}
+\label{sec:classification}
+
+\subsection{K-nearest neighbors}
+\label{sec:knn}
+
+\paragraph{Dataset complet}
+\label{par:dataset-complet-knn}
+
+Le principe des K-nearest neighbors est de classer un objet par rapport aux objets qui sont le plus proches de lui.
+Appliqué à la classification de vins, un algorithme KNN observera tous les vins ayant des propriétés similaires. Il
+quelle qualité est attribuée à ces vins similaires afin de déterminer la qualité du vin observé.
+
+Lors des test, nous avons obtenu une précision de 0.62 sur la base d'apprentissage et une précision de 0.55 sur la
+base de test en prenant 10 voisins. En diminuant le nombre de voisins à 3, nous obtenons une précision de 0.77 sur la
+base d'apprentissage et 0.56 sur la base de test. Au contraire, augmenter le nombre de voisins à 20 diminue la précision
+à 0.58 sur la base d'apprentissage et 0.54 sur la base de test.
+
+Nous constatons qu'augmenter le nombre de voisins diminue les performances en apprentissage. En revanche, la précision
+en validation ne varie que très peu. L'algorithme KNN reste cependant relativement simple, pour améliorer ces résultats
+nous pouvons changer de modèle.
+
+\subsection{SVM}
+\label{sec:svm}
+
+\paragraph{Dataset complet}
+\label{par:dataset-complet-svm}
+
+Le principe des SVM consiste à ramener un problème de classification ou de discrimination à un \textbf{hyperplan} (\textit{feature space})
+dans lequel les données sont séparées en plusieurs classes dont la frontière est la plus éloignée possible des points de
+données (ou "marge maximale"). D'où l'autre nom attribué aux SVM : les séparateurs à vaste marge. Le concept de frontière
+implique que les données soient linéairement séparables. Pour y parvenir, les support vector machines font appel à des noyaux,
+c'est-à-dire des fonctions mathématiques permettant de projeter et séparer les données dans l'espace vectoriel, les "vecteurs
+de support" étant les données les plus proches de la frontière. C'est la frontière la plus éloignée de tous les points d'entraînement
+qui est optimale, et qui présente donc la meilleure capacité de généralisation.
+
+Nous avons obtenu une précision de 0.54 en apprentissage et 0.53 en validation. Les performances obtenus sont légèrement inférieures à
+celles l'algorithme KNN, cela est peut-être dû au grand nombre de caractéristiques. Nous retesterons cet algorithme avec un nombre inférieures
+de caractéristiques.
+
+\subsection{Réseau de neurones}
+\label{sec:neurones}
+
+Les réseaux de neurones sont une technique d'apprentissage supervisé pouvant répondre à différents problèmes tels que
+la classification ou la régression.
+
+\paragraph{Dataset complet}
+\label{par:dataset-complet-neurones}
+
